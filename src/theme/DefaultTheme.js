@@ -59,7 +59,7 @@ export const DefaultTheme = createTheme({
       
     },
     p1:{
-        fontSize: '1.4rem',
+        fontSize: '1.7rem',
         fontWeight: 300,
     },
         p2:{
