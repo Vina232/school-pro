@@ -66,5 +66,9 @@ export const DefaultTheme = createTheme({
         fontSize: '1.1rem',
         fontWeight: 300,
     },
+    p3:{
+        fontSize: '1rem',
+        fontWeight: 300,
+    },
   },
 });
