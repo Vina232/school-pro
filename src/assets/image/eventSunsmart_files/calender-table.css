@@ -1,0 +1,141 @@
+.tenprcent {
+   
+    background-color: #e9e9e9;
+}
+.clndr-anchr {
+    font-size: 12px;
+    text-decoration: none;
+    color: #9CAAC4;
+    background-color: #818284;
+    border-radius: 50%;
+    padding: 10%;
+    margin: 5%;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+  /* calendar */
+table.event {
+  /*width: 90%;*/
+  /*  margin-left: 14px;
+  margin-right: 14px;*/
+  margin-bottom: 10px;
+    width:105% border:none;
+  /*border-collapse: separate;*/
+    /*background:#F1EFEF!important;*/
+  width:100%;
+  border: 0;
+   
+}
+table.event thead {
+  zoom: 1;
+}
+table.event thead tr {
+  zoom: 1;
+}
+table.event thead th.month {
+  border-bottom: 1px solid #bbb;
+  font-weight: bold;
+  zoom: 1;
+}
+table.event thead th.month a {
+  border: none;
+  position: relative;
+  top: 5px;
+  margin: 0 10px;
+  zoom: 1;
+}
+table.event th {
+  width: 30px!important;
+  text-align: center;
+}
+table.event td {
+  width: 30px;
+  height:30px!important;
+  padding: 5px 3px!important;
+  margin: 5px;
+   
+  color: #343435;
+  vertical-align:middle!important;
+  border-bottom:none!important;
+  font-size:12px;
+  text-align:center;
+}
+table.event td .date {
+  width:72%;
+  background:#F2F1ED none repeat scroll 0 0;
+  float:left;
+  padding:5px;
+}
+table.event td .add {
+  background:#F2F1ED none repeat scroll 0 0;
+  float:left;
+  padding:5px;
+}
+table.event td a {
+  font-size:9px;
+  padding: 0;
+  margin: 0;
+  height:/*28px*/30px!important;
+  width:29px;
+  text-align:center;
+  display:inline-block;
+}
+table.event td a img {
+  padding: 0;
+  margin: 0;
+}
+.month select {
+  float:none!important;
+  font-family:Tahoma, Geneva, sans-serif!important;
+  color: #666!important;
+  font-size:12px!important;
+}
+.month {
+  text-align:center!important;
+}
+.calenderform {
+  padding:0!important;
+}
+table.event tr:nth-child(3) td {
+    color: #999 !important; 
+}
+table.event tbody td, table.event tbody th {
+/*  border: 1px solid #ddd;
+border-top-color: #fff;
+border-left-color: #fff;*/
+}
+table.event strong {
+  font-size: 140%;
+}
+table.event .inactive {
+  color: #aaa;
+}
+table.event div.items a {
+  border: 0;
+  margin: 2px 1px;
+}
+
+#fcalendar_div h3{
+    background-color: #EFEFF1;
+    color: #656565;
+  font-size:16px;
+  line-height:30px;
+  font-weight:500;
+  font-size:'Open Sans', sans-serif;  
+    height: 30px;
+    letter-spacing: 1px;
+    padding-bottom:0;
+  text-align:center;
+  text-transform:none;
+  }
+#fcalendar_div{ //background:#eeebeb;
+/*-webkit-box-shadow: 3px 10px 10px -7px rgba(0,0,0,0.33);
+-moz-box-shadow: 3px 10px 10px -7px rgba(0,0,0,0.33);
+box-shadow: 3px 10px 10px -7px rgba(0,0,0,0.33);*/
+ }
+/*table.event tr{
+  background:url(../img/10percent.png) repeat left top;
+}
+*/
+/*-------------------------------------------------------------------*/

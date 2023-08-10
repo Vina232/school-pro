@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)https://www.sunsmart.com.au/uvalert/widget.aspx?locationid=685 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	UV Alert - SunSmart - Cancer Council Victoria
+</title><meta id="ViewportMetaTag" name="viewport" content="width=device-width, initial-scale=1.0"><link rel="SHORTCUT ICON" type="image/ico" href="https://www.sunsmart.com.au/images/template/favicon.ico">
+		<style>
+		body{
+				width:100%;
+				margin:0;
+				padding:0;
+				font-family: arial,helvetica,verdana;
+				font-size:16px;
+				color:#ffffff;
+		}
+		p{
+				margin:0;
+				padding:0;
+				display:inline-block;
+		}
+		#wrapper{
+				position:relative;
+				height:300px;
+				box-sizing:border-box;
+				width:100%;
+				margin:0;
+				padding:0;
+				display:inline-block;
+				border-radius:8px;
+				background: #3989c9; /* Old browsers */
+				background: -moz-linear-gradient(top, #3989c9 0%, #005b99 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3989c9), color-stop(100%,#005b99)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #3989c9 0%,#005b99 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, #3989c9 0%,#005b99 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top, #3989c9 0%,#005b99 100%); /* IE10+ */
+				background: linear-gradient(to bottom, #3989c9 0%,#005b99 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3989c9', endColorstr='#005b99',GradientType=0 ); /* IE6-9 */
+		}
+		#wrapper-inner{
+				width:170px;
+				margin:0 auto;
+		}
+		.hidden{
+				display: none;
+		}
+		/* this section is for date and locatioin: */
+		.wrapper-date-logo{
+				display: inline-block;
+				width: 100%;
+				text-align:left;
+				margin-bottom:6.6px;
+		}
+		.date-location{
+				margin-top:20px;
+				float:left;	
+		}
+		.date-info .date{
+				font-size:10px;
+				line-height:130%;
+				padding-left:15px;
+		}
+		.date-info #weather-details{
+				font-size:12px;
+				line-height:100%;
+		}
+		#location-temp-wrapper,#location-temp-inner{
+				box-sizing:border-box;
+				width:100%;
+				height:35px;
+				margin:0;
+				padding:5px 0px 0 10px;
+				display:inline-block;
+		}
+		#location-temp-inner{
+				height:30px;
+				padding:0;
+		}
+		#location-info{
+				width:60%;
+				float:left;
+				text-transform:uppercase;
+				text-align:left;
+		}
+		#locationSelection{
+				width:100%;
+				height:25px;
+				border-radius:6px;
+				border-collapse:collapse;
+				border:0;
+				background:#2E90C6;
+				font-size:13px;
+				color:#ffffff;
+		}
+		#logo{
+				margin-top:-52px;
+				text-align:right;
+				float:right;
+		}
+		/* The section of uv */
+		#uvalert-wrapper{
+				width:100%;
+				margin: 0;
+				padding:0;
+				display:inline-block;
+				position: relative;
+		}
+		#uvalert-arc-wrapper{
+			width:100%;
+			margin: 0 0;
+			padding:0;
+			display:inline-block;
+			position:absolute;
+			top:0;
+		}
+		#uvalert-daily{
+			    height:105px;
+		}
+		#uvalert-daily-inner{
+				width:150px;
+				padding:25px 10px 10px 10px;
+				display: inline-block;
+				text-transform:uppercase;
+		}
+		#uvalert-time{
+				display: inline-block;
+				width: 100%;
+				height:25px;
+				text-align:center;
+				font-size:16px;
+		}
+		.time-index{
+			    font-weight: bold;
+		}
+		.index-indicator{
+			    font-size:10px;
+			    vertical-align: middle;
+		}
+		#time-separator{
+				margin:10px 0 5px 0;
+				font-size:9px;
+		}
+		#start-Time-finish{
+				width: 100%;
+				font-size:10px;
+				margin-top:25px;
+		}
+		#start-Time-finish span{
+			margin-top:5px;
+		}
+		#start-Time-finish span:first-child{
+				float:left;
+				margin-left:-5px;
+		}
+		#start-Time-finish span:last-child{
+			    float:right;
+				margin-right:-5px;
+		}
+		/* Sun protection */
+		#sun-protection{
+			width:100%;
+			margin-bottom:6.6px;
+		}
+		.uvalert-title{
+				width: 84%;
+				height:29px;
+				margin-left:14px;
+				padding-top:5px;
+				font-size:10px;
+				font-weight:bold;
+				text-align:center;
+				text-transform:uppercase;
+				border-radius: 9px;
+				line-height: 13px;
+		}
+		.uvalert-title-protectionReq{
+				letter-spacing: 2px;
+			    background-color:#fe9b37;
+				
+		}
+		.uvalert-title-protectionNo{
+				line-height: 13px;
+				letter-spacing: 1px;
+				background-color:#717074;
+		}
+		/* weather and UV live */
+		#weather-uvLive{
+				height: 64px;
+				width: 96%;
+		}
+		/* weather section */
+		#weatherWrapper,#uvalert-live{
+				background-color: #0f1e64;
+				width:43%;
+				border-radius: 9px;
+		}
+		#weatherWrapper{
+				float: left;
+				height:62px;
+				margin-left:13px;
+		}
+		.weather-details{
+				display: inline-block;
+				box-sizing:border-box;
+				width:100%;
+				padding-left:5px;
+				text-align:center;
+		}
+		.weather-details .weather-icons{
+				float: left;
+				margin-top:7px;
+		}
+		.weather-details .weather-icons img{width:22px;}
+		.weather-details .weather-degree{
+				float:right;
+				margin: 10px 5px 0 5px;
+				font-size:14px;
+		}
+		#weatherWrapper .weather-des{
+				box-sizing:border-box;
+				width:100%;
+				padding:0 1%;
+				text-align: center;
+				font-size:11px;
+		}	
+		/* uv section */
+		#uvalert-live{
+				float: right;
+				margin-right:6px;
+				text-align: center;
+				padding-top:8px;
+				height:54px;
+				font-size:10px;
+				text-transform:uppercase;
+		}
+		.live-title{
+				font-size: 8px;
+				display: inline-block;
+		}
+		.uv-summary{
+				font-size:9px;
+				display: inline-block;
+				height:28px;
+				padding-top:8px;
+		}
+		.uv-summary .now-summary{
+				box-sizing:border-box;
+				float:left;
+				width:45%;
+				padding:0 1%;
+		}
+		.now-title,.max-title{
+				color:#FAD203;
+		}
+		.now-index,.max-index{
+				margin-top:2px;
+		}
+		.now-summary .now-index{
+			width:100%;
+			text-align:center;
+			display:inline-block;
+		}
+
+		#uvalert-live .uv-summary hr{		
+				float:left;
+				-webkit-transform:rotate(90deg);
+				transform: rotate(90deg);
+				width: 20px;
+				margin-top:8px;
+				margin-left:4px;
+		}
+		.max-summary{
+				box-sizing:border-box;
+				float:right;
+				width:50%;
+				border-left:2px solid #fff;
+				padding:0 1% 0 4%;
+		}
+		.max-title,.max-index{
+			width:100%;
+			text-align:center;
+			display:inline-block;
+		}
+		#widget-loading{
+			width: 100%;
+			display: inline-block;
+			text-align: center;
+			position: absolute;
+			top: 0;
+			left:0;
+			background: #ffffff6e;
+			height: 300px;
+			z-index: 100;
+			display:none;
+		}
+			#widget-loading img{padding-top:100px;}
+		#linktosite p{font-size: 8.5px;text-align: center;width: 100%;margin-top: 2px;display: inline-block;}
+			#linktosite p a{color:#fff;text-decoration:none;}
+		/*Dynamic*/
+		#ChangeLocationButton{display:none;}
+		#sunCircle{width:150px;height:75px;position:relative;margin:0 10px;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;box-sizing:border-box;}
+		#sunCircle:before{content:'';width:150px;height:75px;border:8px solid #0f1e64;border-bottom:none;position:absolute;box-sizing:border-box;transform-origin:50% 0;border-radius:150px 150px 0 0;left:0;top:0}
+		#sunCircle .sunArc{width:150px;height:75px;border:8px solid #0f1e64;border-top:none;position:absolute;transform-origin:50% 0 0;border-radius:0 0 150px 150px;left:0;top:100%;z-index:5;transform:rotate(calc(1deg * (80 * 1.8)));box-sizing:border-box;cursor:pointer}
+		#sunCircle .sunArc:after{background:#0f1e64;box-sizing:border-box;border-radius:2px;height:10px;padding:3px 5px;top:0;position:absolute;left:0;transform:rotate(calc(-1deg * 80 * 1.8)) translate(-30px,0px);transition:.2s ease-in;transform-origin:0 50% 0;opacity:0}
+		#sunCircle .sunArc:hover{opacity:.8}
+		#sunCircle .sunArc:hover:after{opacity:1;left:30px}
+		#sunCircle .sunArc.start{border-color:#0f1e64;}
+		#sunCircle .sunArc.start:after{background:#d9d9d9;}
+		#sunCircle .sunArc.arc{border-color:#fe9b37;}
+		#sunCircle .sunArc.arc:after{background:#fe9b37;}
+		#sunCircleInner{width:150px;height:75px;position:absolute;top:0;margin:0 10px;display:flex;align-items:flex-end;justify-content:center;box-sizing:border-box;}
+		#sunCircleInner .sunDot{top:50%;left:50%;width:18px;height:18px;border:none;background:#fe9b37;border-radius:50%;border: 1px solid #f9c48f;z-index:10;transform: rotate(175deg) translate(65px);}
+	</style>
+	<script type="text/javascript" async="" src="./js"></script><script src="./393538431385644" async=""></script><script async="" src="./fbevents.js"></script><script type="text/javascript" async="" src="./gtm-script.js"></script><script type="text/javascript" async="" src="./analytics.js"></script><script async="" src="./gtm.js"></script><script>
+	function submitLocation()
+	{
+		var locationOptons = document.getElementById("locationSelection");
+		var loadingWidget = document.getElementById("widget-loading");
+		var locationButton = document.getElementById("ChangeLocationButton");
+		
+		loadingWidget.style.display = "block";
+		locationButton.click();
+	}
+	</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K23QRDG');</script>
+<!-- End Google Tag Manager -->
+
+	<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+	<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K23QRDG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+		<form method="post" action="https://www.sunsmart.com.au/uvalert/widget.aspx?locationid=685" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="60372662">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="sFoIQVy6RdHY+piQrOdF1ezIPfPvxJplQuKTKr9iQSqH/n/rSfcAbbXVh49Qtjeg+vI7wTzZrgZwIq62aypefDq0fK7MKoEhxR6wNz6M/9Iscuk9Skmd+VQGMyLug30XwGQJpxXrdRS3w975fXnU/zh3Fq4ZWmJ1ilH06hkWIZHLhB2ysD6NMk8W1eFqP2N7LbIly0SH8ZKGOucWBBSmWcELD+hM9SaoI2qVK+rHW1IUIofyAhgVs/jb6qsDGKT9XiNDgGnAQ0tO1b4YbvkKhY+RGbcfut+5/p5ZIKC9rCT6Oluh+Q0u6lZNjrRj60KRqo70p+7P4cu25SIDasvL0qxnDrjKEjpFF4L+QqcpSeuE1XHmaqxHh32+1huOS2WAyXxTyj4GDxh9JQo2K7DLpbe33IeWNcAaXH2F9SMHbxFWzOpLSiVDBcE0qKcS11CwjeL1/U5ALoFZyKWTvt08ubRVCB28BJOdhLD5+3hEtH813nw0/Stab6P38QT1+VOjWn3cCILbShzdQ8xj6z/jNkte6rJWf1uM4PoZezpekAz0zRgQkAnYDDjWnLGWbNMlGwDSrl0leYCVI68lHhBd1uKJo0jA0qkTdVRRA01lzYPlSuyZaTgBvIzYjZI64dCVwYQNs45zzPijjoexIsgIWG1jK8q+AAfgZudR74Ds3gYIZYcYkNeRdJlkoEw+2049N4+VKkR7AUwYHif69gDqvod8pW7BL8JTvGiaXHn5j70DhSoclarEGUdMiwJQq/x+VqUuHgw/XYKKb1Ni5SVO3LVnZbXFyP1XQyPXvEYqj/BEiB+NFK8TkeojPziB3pEQy+nKX1XkAIz3FAVfe+qu/RoKrzsl0oCDpoKhPbwwQ0Pajb2cdltcMeA3sys53P13lrAujHMDtVtbsJsZdp5LMfTNB898+i5puc/zV8dGwpvqh5uOYL83JcedImmGk6g5cBSVqk2CYcUJ7roTemAwdqaYYScVgv+LYZluZPnamLyO5geqIJOPvZPdarr8kAnfEJwtn0CkKYKtAUM9VGSujGJuknjTdh7vfWQvA648McYkUKppF9A5HeFZf+FEb7VKdN2jjcgWT0o9d5AnPhF0yRZkEM7Z1RSWvAblE0uKRiPKBfMhjZzB8JALOwfT9HRh8Z03IsiZrfNnuyGmVlyWhvsRaKwbFknyCC+ggRanQsdxC35WgEbXpkjiKVv7Tu3fR0+cdKXIhdWLyPUm34VR6I4j0zXMGF7bYFD7hYzonPicfjWOz3JXggRWXmcDUTeJeC7v88G5meyKBlaGArZi0A9lywxg86ajKkp62TAOoek9JEvuegxKPJ74qqA0grIOrnBdY4eHvYz+RUI0cvCx92bDYIjftIW6rohsaZB9UYxT+NiEoDzw8rrnkOU8xHzz3dlcq6ZWTNtUCkPZxNWUaxq2DHGEHrtjY+kXsbrLluOG3O/KF00Kvlp0uDNSEL/CTB038N3GTDBGIhwK4D2w6iBkuyQ4gxHiaqanJYPJU6dYHp5q5a4/hAhJ65eDvB40TUQDtcoT/n7DPzt6a2LifwTTpTdXVrO0WLODt8dIwCneg6SVVbZ3/hQFtuWqA53Y4XpG26YyV1+ik6fTy6N1Cn2RWgLuHRkRRCz1vXCJPTQbbdY0fEjw/WRwnduc9a3dMw3UXe0EWNUvpveVcsdl/XDnOABc3CzGDUi9JlavV05BgtummAn8DaY/PBzvtEQOtmfqcPq5+GcMP9zjI5gszm3wQ2abEQyvvJaFSeZFl8kPFYAXfjzrdRypWoIS6f7CeiUzGjesqq4iS6WnPKJ+Xcp6fOMcGrkZIcFq5kHxy/zsvc82Cq7gXrY175HjUK88WJIbiC5YmyhGC+8mgN7Jw30AkdrrFQd3UDPnr6uYRQY=">
+</div>
+			
+			<div id="wrapper"><div id="wrapper-inner">
+				<!-- including date,location and logo -->
+				<div class="wrapper-date-logo">
+					<div class="date-location">
+						<div class="date-info">
+							<p>
+								<span class="date">27 Jul 2023</span><br>
+							</p>
+						</div>
+						<div id="location-temp-wrapper">
+							<div id="location-temp-inner">
+								<div id="location-info">
+									<select name="locationSelection" id="locationSelection" autocomplete="off" onchange="javascript:submitLocation()">
+	<option value="636">Aireys Inlet</option>
+	<option value="637">Ararat</option>
+	<option value="638">Avalon</option>
+	<option value="149">Bairnsdale</option>
+	<option value="150">Ballarat</option>
+	<option value="639">Beechworth</option>
+	<option value="640">Benalla</option>
+	<option value="151">Bendigo</option>
+	<option value="680">Birchip</option>
+	<option value="641">Cape Otway</option>
+	<option value="642">Casterton</option>
+	<option value="643">Castlemaine</option>
+	<option value="644">Cerberus</option>
+	<option value="684">Cobram</option>
+	<option value="152">Colac</option>
+	<option value="645">Corryong</option>
+	<option value="646">Cranbourne</option>
+	<option selected="selected" value="685">Dandenong</option>
+	<option value="686">Drouin</option>
+	<option value="153">Echuca</option>
+	<option value="670">Edenhope</option>
+	<option value="154">Falls Creek</option>
+	<option value="155">Frankston</option>
+	<option value="156">Geelong</option>
+	<option value="673">Gisborne</option>
+	<option value="157">Hamilton</option>
+	<option value="647">Heywood</option>
+	<option value="158">Horsham</option>
+	<option value="648">Kerang</option>
+	<option value="649">Kyabram</option>
+	<option value="674">Kyneton</option>
+	<option value="650">Lake Eildon</option>
+	<option value="682">Lake Mountain</option>
+	<option value="651">Lakes Entrance</option>
+	<option value="159">LaTrobe Valley</option>
+	<option value="160">Laverton</option>
+	<option value="675">Leongatha</option>
+	<option value="652">Mallacoota</option>
+	<option value="683">Mansfield</option>
+	<option value="161">Melbourne</option>
+	<option value="676">Melton</option>
+	<option value="162">Mildura</option>
+	<option value="681">Moe</option>
+	<option value="653">Moorabbin</option>
+	<option value="163">Mornington</option>
+	<option value="654">Mortlake</option>
+	<option value="671">Mount Baw Baw</option>
+	<option value="164">Mount Buller</option>
+	<option value="165">Mount Dandenong</option>
+	<option value="166">Mount Hotham</option>
+	<option value="167">Mt Baw Baw</option>
+	<option value="655">Nhill</option>
+	<option value="656">Omeo</option>
+	<option value="168">Orbost</option>
+	<option value="657">Ouyen</option>
+	<option value="677">Pakenham</option>
+	<option value="658">Phillip Island</option>
+	<option value="659">Port Fairy</option>
+	<option value="660">Portland</option>
+	<option value="661">Redesdale</option>
+	<option value="662">Rhyll</option>
+	<option value="663">Rutherglen</option>
+	<option value="169">Sale</option>
+	<option value="170">Scoresby</option>
+	<option value="171">Seymour</option>
+	<option value="172">Shepparton</option>
+	<option value="664">Stawell</option>
+	<option value="678">Sunbury</option>
+	<option value="173">Swan Hill</option>
+	<option value="665">Tatura</option>
+	<option value="672">Torquay</option>
+	<option value="687">Traralgon</option>
+	<option value="174">Tullamarine</option>
+	<option value="175">Wangaratta</option>
+	<option value="666">Warracknabeal</option>
+	<option value="679">Warragul</option>
+	<option value="176">Warrnambool</option>
+	<option value="177">Watsonia</option>
+	<option value="667">Weeaproinah</option>
+	<option value="668">Wilsons Promontory</option>
+	<option value="178">Wonthaggi</option>
+	<option value="179">Yarra Glen</option>
+	<option value="669">Yarrawonga</option>
+
+</select>
+									<input type="submit" name="ChangeLocationButton" value="Change Location" id="ChangeLocationButton">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="logo"><a href="https://www.sunsmart.com.au/" title="SunSmart - Cancer Council Victoria" target="_blank"><img src="./sunsmart-logo.png" alt="SunSmart"></a></div>
+				</div>
+				<!-- main uvalert section -->
+				<div id="uvalert-wrapper">
+						<div id="uvalert-arc-wrapper"><div id="sunCircle"><div class="sunArc arc"></div><div class="sunArc start"></div><style>#sunCircle .sunArc.start{transform:rotate(calc(1deg * (-40 * 1.8)))}#sunCircle .sunArc.start:after{transform:rotate(calc(-1deg * -40 * 1.8)) translate(-30px,0px)}#sunCircle .sunArc.arc{border-color:#fe9b37;transform:rotate(calc(1deg * (120 * 1.8)))}#sunCircle .sunArc.arc:after{background:#fe9b37;transform:rotate(calc(-1deg * 120 * 1.8)) translate(-30px,0px)}</style><style>#sunCircleInner .sunDot{background:#e6c9ac;}#sunCircle .sunArc.arc{display:none;}#uvalert-time{visibility:hidden;}</style></div><div id="sunCircleInner"><div class="sunDot" style="transform: rotate(259deg) translate(62px);"></div></div></div>
+						<div id="uvalert-daily">
+							<div id="uvalert-daily-inner">
+									<div id="uvalert-time">
+										<span class="time-index">12</span><span>&nbsp;:</span>
+										<span class="time-index">00</span>
+										<span class="index-indicator">AM</span>
+										<br>
+										<div id="time-separator">to</div>
+										<div id="uvalert-time">
+											<span class="time-index">11</span><span>&nbsp;:</span>
+											<span class="time-index">59</span>
+											<span class="index-indicator">PM</span>
+										</div>
+									</div>	
+									<div id="start-Time-finish">
+										<span>6 AM</span>
+										<span>9 PM</span>
+									</div>	
+							</div>
+						</div>
+				</div>
+				<div id="sun-protection">
+					<!-- Sun preotion is recommended -->
+					
+					<!-- Sun protection is not recommended -->
+					<div id="sunProtectionNo" class="uvalert-title uvalert-title-protectionNo">
+						<p>Sun Protection Not Recommended</p> 
+					</div>
+				</div>
+				<!-- Weather details and live UV index -->
+				<div id="weather-uvLive">
+						<div id="weatherWrapper">
+							<div class="weather-details">
+								<p class="weather-icons">
+									<img src="./2201-Day.png" alt="Partly Cloudy">
+								</p>
+								<p class="weather-degree">16℃</p>
+							</div>
+							<p class="weather-des">Partly Cloudy</p>
+						</div>
+					<div id="uvalert-live">
+						<div class="live-title">Live UV Index</div>
+						<div class="uv-summary">
+							<div class="now-summary">
+								<div class="now-title">Now</div>
+								<div class="now-index">2.3</div>
+							</div>
+							<div class="max-summary">
+								<div class="max-title">Max</div>
+								<div class="max-index">2.52</div>
+							</div>	
+						</div>
+					</div>	
+				</div>
+				<div id="linktosite"><p><a href="https://www.sunsmart.com.au/resources/uv-widget" target="_blank">ADD THIS TO YOUR WEBSITE</a></p></div>
+				<div id="widget-loading"><img src="./loading.gif" alt="loading"></div>
+			</div>
+		</div>
+		
+		</form><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./activityi.html"></iframe>
+	  
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","393538431385644");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=393538431385644&amp;ev=PageView&amp;noscript=1"></noscript>
+
+</body></html>
