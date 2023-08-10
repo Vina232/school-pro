@@ -57,6 +57,10 @@ export const DefaultTheme = createTheme({
         fontSize: '1rem',
         textTransform: 'uppercase',
       
+    },
+    p1:{
+        fontSize: '1.2rem',
+        fontWeight: 300,
     }
   },
 });
