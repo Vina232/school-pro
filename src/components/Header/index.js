@@ -22,6 +22,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { headerNav, headerNavs, pages, paths } from '../../utils/tempData';
+import DarkButton from '../DarkButton';
 
 
 
@@ -82,6 +83,7 @@ const list = (anchor) => (
           </ListItem>
         ))}
       </List>
+
 
       
     </Box>
@@ -205,7 +207,9 @@ const list = (anchor) => (
       ))} */}
          
         </Toolbar>
+              <DarkButton/>
       </Container>
+          
     </AppBar>
           <Outlet />
 

@@ -1,7 +1,7 @@
 import { createTheme } from "@mui/material";
 
 
-export const DefaultTheme = createTheme({
+export const DarkTheme = createTheme({
   palette: {
     primary: {
         main: '#90caf9',
@@ -28,7 +28,7 @@ export const DefaultTheme = createTheme({
         text: 'red',
     },
     background:{
-        main: '#90caf9',
+        main: '#121212',
     }
   },
   typography: {
@@ -62,8 +62,16 @@ export const DefaultTheme = createTheme({
       
     },
     p1:{
-        fontSize: '1.9em',
+        fontSize: '1.8rem',
         fontWeight: 300,
-    }
+    },
+        p2:{
+        fontSize: '1.1rem',
+        fontWeight: 300,
+    },
+    p3:{
+        fontSize: '1rem',
+        fontWeight: 300,
+    },
   },
 });

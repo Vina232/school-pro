@@ -6,16 +6,20 @@ import EventSection from '../components/EventSection'
 import { useSelector, useDispatch } from "react-redux";
 import { getAllUser } from "../features/getUserSlice";
 import FootLinks from '../components/FootLinks'
+import { useTheme } from '@mui/material';
+import {useNavigate, Link} from 'react-router-dom';
+import Article from '../components/Article.js'
 
 
 function Home() {
- 
+   const theme = useTheme();
     const dispatch = useDispatch();
   const { users, loading, error } = useSelector((state) => {
     // console.log("--state///", state);
     return state.userlist;
   });
-console.log('err--',error)
+// console.log('err--',error);
+const navigate = useNavigate();
   useEffect(() => {
     dispatch(getAllUser());
     // 
@@ -32,15 +36,19 @@ console.log('err--',error)
 // redux   -----   
 
   return (
-    <div>
+    <div style={{
+      background: theme.palette.background.main,
+    }}>
+
             {users?.map((ele, ind) => {
-       return <h2>{ele.name}</h2>;
+       return <h2 onClick={()=> navigate('/userdetail', {state:ele})}>{ele.name}</h2>;
       })}
           <ImageCarousel/>
     <LogoSection/>
     <NewsSection/>
     <EventSection/>
     <FootLinks/>
+    <Article/>
     </div>
   )
 }

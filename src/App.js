@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Section from './components/Section';
-import React,{createContext,useState} from 'react'
+import React,{createContext,useContext,useState} from 'react'
 import { ThemeProvider, Typography, createTheme } from "@mui/material";
 import ImageSlider from './components/ImageSlider';
 import LogoSection from './components/LogoSection';
@@ -12,18 +12,23 @@ import Router from './router';
 import FootLinks from './components/FootLinks';
 import EventSection from './components/EventSection';
 import { DefaultTheme } from './theme/DefaultTheme';
+import { DarkTheme } from './theme/DarkTheme';
+import { ThemeContext } from './context/ThemeContext';
+
 
 export  const globalData = createContext();
 export  const globalInputData = createContext();
 
 function App() {
   // const theme = createTheme();
+   const {mode} = useContext(ThemeContext);
+  //  console.log('mode-----', value)
   const [dataValue, setDataValue] = useState("test data")
   
   return (
     <div className="App">
 
-        <ThemeProvider theme={DefaultTheme}>
+        <ThemeProvider theme={mode=== 'light'? DarkTheme : DefaultTheme}>
 
           <globalData.Provider value={{dataValue, setDataValue}}>
                    <Header/>

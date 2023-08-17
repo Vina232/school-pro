@@ -9,12 +9,13 @@ import Login from '../pages/Login'
 import Header from '../components/Header'
 import LoginNew from '../pages/LoginNew'
 import FootLinks from '../components/FootLinks'
+import Userdetail from '../pages/Userdetail'
 // import FootLinks from '../components/FootLinks'
 
 function router() {
   return (
     <> 
-        <Header/>
+        {/* <Header/> */}
         <Routes> 
         <Route path='/'  element={<Home/>}  />
         <Route index element={<Home/>}  />
@@ -22,10 +23,11 @@ function router() {
         <Route path='/diagnostic'  element={<Diagnostic/>}  />
         <Route path='/analytics'  element={<Analytics/>}  />
         <Route path='/login' element={<LoginNew/>} />
+         <Route path='/userdetail' element={<Userdetail/>} />
         <Route path='*'  element={<NotFound/>}  />
       
         </Routes>
-         <FootLinks/>
+         {/* <FootLinks/> */}
 </>
   
   )
